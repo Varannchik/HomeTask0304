@@ -13,8 +13,11 @@ h1,p,a,blockquote{
 
 h1::before, h1::after{
     content: '';    
-    height: 40px;
-    width:100%;
+    
+    display: inline-block;
+    height: 35px;
+    width: 500px;
+    vertical-align: middle;
     background: lightcyan;
     position: absolute;
     top: 0;
@@ -29,7 +32,8 @@ h1::after{
 p::before, p::after{
     content: "\2318";
     font-size: 50px;
-    display: block;    
+    display: block;
+
     text-align: center;
 
 

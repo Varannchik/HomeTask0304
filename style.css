@@ -12,14 +12,14 @@ h1,p,a,blockquote{
 
 
 h1::before, h1::after{
-    content: '';    
+    content: '';   
     
     display: inline-block;
     height: 35px;
     width: 500px;
     vertical-align: middle;
     background: lightcyan;
-    position: absolute;
+    
     top: 0;
 }
 h1::before{

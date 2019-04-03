@@ -1,0 +1,61 @@
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+h1,p,a,blockquote{
+    position: relative
+}
+
+
+h1::before, h1::after{
+    content: '';    
+    height: 40px;
+    width:100%;
+    background: lightcyan;
+    position: absolute;
+    top: 0;
+}
+h1::before{
+    left: 0;
+}
+h1::after{
+    right: 0;
+}
+
+p::before, p::after{
+    content: "\2318";
+    font-size: 50px;
+    display: block;    
+    text-align: center;
+
+
+}
+
+a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    white-space:pre;
+}
+a::before{
+    content: "\2196" ;
+    display: inline-block;
+    margin: 0 10px ;   
+
+}
+
+blockquote::before{
+    content: open-quote;
+    font-size: 50px;
+}
+blockquote::after{
+    position: absolute;
+    right: 0;
+    content: close-quote;
+    font-size: 50px;
+    
+}

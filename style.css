@@ -10,33 +10,33 @@ h1,p,a,blockquote{
     position: relative
 }
 
-
+h1{
+    width: 100%;
+    text-align: center;
+}
 h1::before, h1::after{
-    content: '';   
-    
+    content: '';     
     display: inline-block;
     height: 35px;
-    width: 500px;
     vertical-align: middle;
-    background: lightcyan;
-    
-    top: 0;
+    background: lightcyan; 
+    width: 100%;   
+   
 }
 h1::before{
-    left: 0;
+    margin-left: -100%;
 }
 h1::after{
-    right: 0;
+    margin-right: -100%;
 }
+
 
 p::before, p::after{
     content: "\2318";
     font-size: 50px;
     display: block;
-
     text-align: center;
-
-
+    
 }
 
 a{
